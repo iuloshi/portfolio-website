@@ -1,5 +1,5 @@
 body {
-	background-color: #CCCCCC;
+	background-color: cyan;
 	color: black;
 }
 nav {
@@ -18,4 +18,22 @@ footer {
 a {
 	color: black;
 	text-decoration: none;
+}
+h1 {
+
+}
+p {
+
+}
+
+
+#intro {
+	height: 500px;
+	text-align: center;
+	padding-top: 200px;
+	background-color: #EDEDED;
+}
+.project-1 {
+	height: 500px;
+	background-color: #CCCCCC;
 }
