@@ -6,6 +6,8 @@ body {
 body {
 	background-color: cyan;
 	color: black;
+	font-size: 16px;
+	line-height: 22px;
 }
 header {
 	height: 50px;
@@ -24,21 +26,31 @@ footer {
 footer a {
 	color: white;
 }
-/*--------------*/
+/*-------TYPOGRAPHY-------*/
 a {
 	color: black;
 	text-decoration: none;
 }
 h1 {
-
+	font-size: 50px;
+	margin-bottom: .5em;
 }
 h2{
-
+	font-size: 22px;
+	border-bottom: 1px black solid;
+	padding-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 p {
-
 }
-/*--------------*/
+/*--------MEDIA-------*/
+img {
+	width: 100%;
+}
+video {
+	width: 100%;
+}
+
 #intro {
 	height: 100%;
 	text-align: center;
@@ -46,15 +58,23 @@ p {
 	background-color: #EDEDED;
 }
 .project {
+	padding: 5em 0;
+/*	height: 100%;
+*/}
+.project h2 {
 	text-align: center;
-	height: 100%;
 }
-.proj-1 {
+.main_img {
+}
+#proj-1 {
 	background-color: #CCC;
 }
-.proj-2 {
+#proj-2 {
 	background-color: #BBB;
 }
-.proj-3 {
+#proj-3 {
 	background-color: #AAA;
+}
+#proj-4 {
+	background-color: #888;
 }
