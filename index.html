@@ -2,46 +2,54 @@
 <html lang="en-us">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>mehgan's portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.gs.12col.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href="http://vjs.zencdn.net/4.3/video-js.css" rel="stylesheet">
-		<script src="http://vjs.zencdn.net/4.3/video.js"></script>
 </head>
 <body>
 	<header>
-		<div class="container">
+		<div class="wrapper">
 			<a href="http://mehgan.com" alt="mehgan.com">logo</a>
 			<i class="fa fa-comment"></i>
-		</div><!--.container-->
+		</div><!--.wrapper-->
 	</header>
 
 	<section id="intro">
-		<div class="container">
+		<div class="wrapper">
 			<h1>mehgan</h1>
 			<p>some text about me</p>
 
-		</div><!--.container-->
+		</div><!--.wrapper-->
 	</section><!--#intro-->
 	<section class="project" id="proj-1">
-		<div class="container">
+		<div class="wrapper">
 			<h2>Home Mortgage Disclosure Act website</h2>
 			<div class="row">
 				<div class="col span_12">
 					<img src="img/iMac.png" alt="">
 				</div>
 			</div><!--.row-->
-		</div><!--.container-->
+		</div><!--.wrapper-->
 	</section><!--.proj-1-->
-	<section class="project" id="proj-2">
-		<div class="container">
+		<section class="project" id="proj-2">
+		<div class="wrapper">
+			<h2>CFPB Open Tech website</h2>
+			<div class="row">
+				<div class="col span_12">
+					<img src="img/iMac.png" alt="">
+				</div>
+			</div><!--.row-->
+		</div><!--.wrapper-->
+	</section><!--.proj-2-->
+	<section class="project" id="proj-3">
+		<div class="wrapper">
 			<h2>Animation</h2>
-			<video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="960" height="400" poster="my_video_poster.png" data-setup="{}">
-				<source src="video/stamps.mp4" type='video/mp4'>
-			</video>
+			<div id="vimeo-iframe">
+				<iframe src="http://player.vimeo.com/video/41033073" width="720" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
 			<div class="row gutters">
 				<div class="col span_6">
 					<img src="img/Stamps_1.jpg" alt="">
@@ -50,10 +58,10 @@
 					<img src="img/Stamps_2.jpg" alt="">
 				</div>
 			</div><!--.row-->
-		</div><!--.container-->
-	</section><!--.proj-2-->
-	<section class="project" id="proj-3">
-		<div class="container">
+		</div><!--.wrapper-->
+	</section><!--.proj-3-->
+	<section class="project" id="proj-4">
+		<div class="wrapper">
 			<h2>Print & Packaging</h2>
 			<div class="row gutters">
 				<div class="col span_6">
@@ -80,10 +88,10 @@
 				</div>
 			</div><!--.row-->
 			</div>
-		</div><!--.container-->
+		</div><!--.wrapper-->
 	</section><!--.proj-4-->
-	<section class="project" id="proj-4">
-		<div class="container">
+<!--  	<section class="project" id="proj-5">
+		<div class="wrapper">
 			<h2>Architectural Watercolors</h2>
 			<div class="row gutters">
 				<div class="col span_6">
@@ -93,24 +101,25 @@
 					<img src="img/ND-MainBldg_analytique.jpg" alt="">
 				</div>
 			</div><!--.row-->
-			<div class="row">
+		<!-- 	<div class="row">
 				<div class="col span_12">
 					<img src="img/ND-MainBldg_plan.jpg" alt="">
 				</div>
-			</div><!--.row-->			
-		</div><!--.container-->
-	</section><!--.proj-4-->
+			</div> --><!--.row-->			
+	<!-- 	</div>.wrapper
+	</section> --><!--.proj-5--> 
 
 
 
 
 	<footer>
-		<div class="container">
+		<div class="wrapper">
 			<a href="mailto:holler@mehgan.com" alt="holler@mehgan.com">Holler!</a>
 			<p>social media icons</p>
-		</div><!--.container-->
+		</div><!--.wrapper-->
 	</footer>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	<script  type="text/javascript" src="js/jquery.fitvids.js"></script><!--Fluid-width video player-->
+	<script  type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

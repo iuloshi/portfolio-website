@@ -19,7 +19,7 @@
 
 /*	MAIN CONTAINER 
 	Set the width to whatever you want the width of your site to be. */
-.container { 
+.wrapper { 
 	max-width: 960px;
 	margin: 0 auto; 
 }
