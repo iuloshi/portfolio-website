@@ -13,15 +13,22 @@
       slideSpeed : 300,
       paginationSpeed : 400,
       // autoPlay: 5000
-		navigation: true,
-		navigationText: [
-		"<i class='fa fa-angle-left'></i>",
-		"<i class='fa fa-angle-right'></i>"
-		]
-
+		navigation: false,
+		// navigationText: [
+		// "<i class='fa fa-angle-left'></i>",
+		// "<i class='fa fa-angle-right'></i>"
+		// ]
 
 
     });
+
+   $(".fa-angle-right").click(function(){
+		$("#image-slider").trigger('owl.next');
+	});
+
+	$(".fa-angle-left").click(function(){
+		$("#image-slider").trigger('owl.prev');
+	});
 
 
 

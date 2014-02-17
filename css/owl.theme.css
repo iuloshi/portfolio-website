@@ -17,7 +17,7 @@
 	*display: inline;/*IE7 life-saver */
 	margin: 5px;
 	padding: 3px 10px;
-	font-size: 50px;
+	font-size: 18px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
