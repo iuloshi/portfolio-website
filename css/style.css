@@ -20,9 +20,11 @@ header {
 	line-height: 50px;
 }
 footer {
-	height: 100px;
-	background-color: #333333;
+	background-color: #333;
 	color: white;
+	padding: 3em 0;
+	text-align: center;
+	font-size: 1.5em;
 }
 footer a {
 	color: white;
@@ -50,6 +52,9 @@ img {
 }
 video {
 	width: 100%;
+}
+#header-email {
+	float: right;
 }
 
 #intro {
@@ -93,4 +98,8 @@ video {
 	display: inline-block;
 	width: 92%;
 	text-align: center;
+}
+.social-media {
+	font-size: 1.5em;
+	margin-top: .5em;
 }
