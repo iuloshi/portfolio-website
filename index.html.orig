@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mehgan's portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/responsive.gs.12col.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+<<<<<<< HEAD
+	<link href="http://vjs.zencdn.net/4.3/video-js.css" rel="stylesheet">
+		<script src="http://vjs.zencdn.net/4.3/video.js"></script>
+=======
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+>>>>>>> master
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<a href="http://mehgan.com" alt="mehgan.com">meHGan</a>
+			<div id="header-email">
+				<a href="mailto:holler@mehgan.com" alt="holler@mehgan.com">holler@mehgan.com</a>
+			</div>
+		</div><!--.wrapper-->
+	</header>
+
+	<section id="intro">
+		<div class="wrapper">
+			<h1>mehgan</h1>
+			<p>interaction designer & aspiring unicorn</p>
+		</div><!--.wrapper-->
+	</section><!--#intro-->
+	<section class="project" id="proj-1">
+<<<<<<< HEAD
+		<div class="container">
+			<h2>Home Mortgage Disclosure Act website</h2>
+			<div class="row">
+				<div class="col span_12">
+					<img src="img/iMac.png" alt="">
+				</div>
+			</div><!--.row-->
+		</div><!--.container-->
+	</section><!--.proj-1-->
+	<section class="project" id="proj-2">
+		<div class="container">
+			<h2>Animation</h2>
+			<video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="960" height="400" poster="my_video_poster.png" data-setup="{}">
+				<source src="video/stamps.mp4" type='video/mp4'>
+			</video>
+			<div class="row gutters">
+				<div class="col span_6">
+					<img src="img/Stamps_1.jpg" alt="">
+				</div>
+				<div class="col span_6">
+					<img src="img/Stamps_2.jpg" alt="">
+				</div>
+			</div><!--.row-->
+		</div><!--.container-->
+	</section><!--.proj-2-->
+	<section class="project" id="proj-3">
+		<div class="container">
+			<h2>Print & Packaging</h2>
+			<div class="row gutters">
+				<div class="col span_6">
+					<img src="img/ilPaninoDolce_1.jpg" alt="">
+				</div>
+				<div class="col span_6">
+					<img src="img/ilPaninoDolce_2.jpg" alt="">
+				</div>
+			</div><!--.row-->
+			<div class="row gutters">
+				<div class="col span_8">
+					<img src="img/UglySweaters.jpg" alt="">
+				</div>
+				<div class="col span_4">
+					<img src="img/Timon_1.jpg" alt="">
+				</div>
+			</div><!--.row-->			
+			<div class="row gutters">
+				<div class="col span_6">
+					<img src="img/TypeTimeline_1.jpg" alt="">
+				</div>
+				<div class="col span_6">
+					<img src="img/TypeTimeline_2.jpg" alt="">
+				</div>
+			</div><!--.row-->
+			</div>
+		</div><!--.container-->
+	</section><!--.proj-4-->
+	<section class="project" id="proj-4">
+		<div class="container">
+=======
+		<div class="wrapper">
+			<h2>Home Mortgage Disclosure Act website</h2>
+			<div class="row">
+				<div class="col span_12">
+              <div class="browser_wrapper">
+                <img src="img/browser-bar.png" alt="Browser bar">
+                <div class="browser_container">
+                  <img src="img/hmda_hp.png" alt="HMDA homepage" >
+                </div>
+              </div>
+				</div>
+			</div><!--.row-->
+		</div><!--.wrapper-->
+	</section><!--.proj-1-->
+		<section class="project" id="proj-2">
+		<div class="wrapper">
+			<h2>CFPB Open Tech website</h2>
+			<div class="row">
+				<div class="col span_12">
+					<img src="img/cfpb-githubio_hp.png" alt="CFPB GitHub.io homepage">
+				</div>
+			</div><!--.row-->
+		</div><!--.wrapper-->
+	</section><!--.proj-2-->
+	<section class="project" id="proj-3">
+		<div class="wrapper">
+			<h2>Animation</h2>
+			<div id="vimeo-iframe">
+				<iframe src="http://player.vimeo.com/video/41033073" width="720" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+ <!--		<video width="720" height="300" controls> 
+			   <source src="video/stamps.mp4" type="video/mp4"> 
+			  	<source src="movie.ogg" type="video/ogg">
+				<source src="movie.webm" type="video/webm">
+ 		</video>	 -->
+ 			<div class="row gutters">
+				<div class="col span_6">
+					<img src="img/Stamps_1.jpg" alt="">
+				</div>
+				<div class="col span_6">
+					<img src="img/Stamps_2.jpg" alt="">
+				</div>
+			</div><!--.row-->
+		</div><!--.wrapper-->
+	</section><!--.proj-3-->
+	<section class="project" id="proj-4">
+		<div class="wrapper">
+			<h2>Print & Packaging</h2>
+			<i class="fa fa-angle-left"></i>
+			<div class="slider-center">
+				<div id="image-slider" class="owl-carousel">
+					<div class="slider-image">
+						<img src="img/ilPaninoDolce_1.jpg" alt="il Panino Dolce package design">
+						<p>il Panino Dolce package design</p>
+					</div>
+					<div class="slider-image">
+						<img src="img/ilPaninoDolce_2.jpg" alt="il Panino Dolce; package design">
+						<p>il Panino Dolce package design</p>
+					</div>
+					<div class="slider-image">
+						<img src="img/UglySweaters.jpg" alt="Ugly Christmas Sweaters Holiday Catalog">
+						<p>Ugly Christmas Sweaters Holiday Catalog</p>
+					</div>
+					<div class="slider-image">
+						<img src="img/Timon_1.jpg" alt="Timon of Athens poster">
+						<p>Timon of Athens poster</p>
+					</div>
+					<div class="slider-image">
+						<img src="img/TypeTimeline_1.jpg" alt="Typography Timeline poster">
+						<p>Typography Timeline poster</p>
+					</div>
+					<div class="slider-image">
+						<img src="img/TypeTimeline_2.jpg" alt="Typography Timeline poster">
+						<p>Typography Timeline poster</p>
+					</div>
+					<div class="slider-image">
+						<img src="img/TeaCozy_1.jpg" alt="Tea Cozy package design">
+						<p>Tea Cozy package design</p>
+					</div>
+					<div class="slider-image">
+						<img src="img/TeaCozy_2.jpg" alt="Tea Cozy package design">
+						<p>Tea Cozy package design</p>
+					</div>
+				</div><!--#image-slider-->
+			</div><!--.slider-center-->
+			<i class="fa fa-angle-right"></i>
+		</div><!--.wrapper-->
+	</section><!--.proj-4-->
+<!--  	<section class="project" id="proj-5">
+		<div class="wrapper">
+>>>>>>> master
+			<h2>Architectural Watercolors</h2>
+			<div class="row gutters">
+				<div class="col span_6">
+					<img src="img/ND-BondHallCafe_WC.jpg" alt="">
+				</div>
+				<div class="col span_6">
+					<img src="img/ND-MainBldg_analytique.jpg" alt="">
+				</div>
+			</div><!--.row-->
+<<<<<<< HEAD
+			<div class="row">
+				<div class="col span_12">
+					<img src="img/ND-MainBldg_plan.jpg" alt="">
+				</div>
+			</div><!--.row-->			
+		</div><!--.container-->
+	</section><!--.proj-4-->
+
+
+
+=======
+		<!-- 	<div class="row">
+				<div class="col span_12">
+					<img src="img/ND-MainBldg_plan.jpg" alt="">
+				</div>
+			</div> --><!--.row-->			
+	<!-- 	</div>.wrapper
+	</section> --><!--.proj-5--> 
+>>>>>>> master
+
+	<footer>
+		<div class="wrapper">
+			<a href="mailto:holler@mehgan.com" alt="holler@mehgan.com">Holler!</a>
+			<div class="social-media">
+				<a href="http://www.linkedin.com/pub/mehgan-iulo/2a/484/134/" alt="LinkedIn profile"><i class="fa fa-linkedin"></i></a>
+				<a href="https://github.com/iuloshi/" alt="GitHub account"><i class="fa fa-github"></i></a>
+				<a href="https://twitter.com/iuloshi" alt="Twitter account"><i class="fa fa-twitter"></i></a>
+				<a href="http://instagram.com/iuloshi" alt="Instagram account"><i class="fa fa-instagram"></i></a>
+			</div>
+		</div><!--.wrapper-->
+	</footer>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script><!--Fluid-width video player-->
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
