@@ -127,6 +127,7 @@ video {
 	width: 10%;
 }
 #proj-4 i {
+	display: none;
 	position: absolute;
 	top: 36%;
 	font-size: 10em;

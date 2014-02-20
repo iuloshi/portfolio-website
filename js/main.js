@@ -39,7 +39,7 @@ $(document).ready(function(){
     });
   }
   animateImages();
-
+  //set timer before beginning animation
   $(".browser_container img").each(function(){
     $(this).stop(true, false);
     $(this).css( "top", 0 );
@@ -70,7 +70,10 @@ $(document).ready(function(){
 	$(".fa-angle-left").click(function(){
 		$("#image-slider").trigger('owl.prev');
 	});
-
+  //--------display arrows on hover--------
+  $("#proj-4").hover(function(){
+    $("#proj-4 i").fadeToggle(500);
+  });
 
 
 
