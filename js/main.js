@@ -70,12 +70,12 @@ $(document).ready(function(){
 	$(".fa-angle-left").click(function(){
 		$("#image-slider").trigger('owl.prev');
 	});
-  //--------display arrows on hover--------
-  $("#proj-4").hover(function(){
-    $("#proj-4 i").fadeToggle(500);
-  });
-
-
+  //----display arrows on hover of larger viewports-----
+  if ($(window).width() > 480) { 
+    $("#proj-4").hover(function(){
+      $("#proj-4 i").fadeToggle(500);
+    });
+  }
 
 
 

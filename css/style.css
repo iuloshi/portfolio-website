@@ -1,7 +1,7 @@
-html,
+/*html,
 body {
 	height: 100%;
-}
+}*/
 
 body {
 	background-color: cyan;
@@ -147,11 +147,36 @@ video {
 	width: 100%;
 }
 
-/*----------------FOOTER----------------*/
+/*-----------------FOOTER----------------*/
 .social-media {
 	font-size: 1.25em;
 	margin-top: 1em;
 }
 .social-media a {
 	padding: 5px;
+}
+
+
+/*-------------MEDIA QUERIES-------------*/
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+	#proj-4 i {
+		font-size: 6em;
+	}
+
+
+}
+
+@media screen and (max-width: 480px) {
+	#proj-4 i {
+		font-size: 4em;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+
+
 }
