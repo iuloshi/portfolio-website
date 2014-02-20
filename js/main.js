@@ -38,16 +38,21 @@ $(document).ready(function(){
       // }
     });
   }
-  animateImages();
-  //set timer before beginning animation
-  $(".browser_container img").each(function(){
-    $(this).stop(true, false);
-    $(this).css( "top", 0 );
-    setTimeout(function (){ 
+  //Fire animation when user scrolls beyond Intro section
+  function initBrowserScroll() {
+    if ($(window).scrollTop() > 500) {
       animateImages();
-    }, 2000);
-  });
+    }
+  }
+  $(window).scroll(initBrowserScroll); 
+  initBrowserScroll();
 
+  // ***NOT WORKING:*** Restart animation when resize window
+  $(window).resize(function(){
+    animateImages();
+  });
+  $(window).resize(animateImages); 
+  
 //--------FitVids fluid-width video player---------
   $("#vimeo-iframe").fitVids();
 
