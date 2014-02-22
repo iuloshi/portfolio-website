@@ -19,7 +19,7 @@ header {
 	line-height: 50px;
 }
 footer {
-	background-color: #383838;
+	background-color: #707070;
 	color: white;
 	padding: 2em 0 3em;
 	text-align: center;
@@ -33,17 +33,25 @@ a {
 	color: black;
 	text-decoration: none;
 }
-h1 {
-	font-family: 'Landmark Regular A', 'Landmark Regular B'; 
+h1, #logo {
+	font-family: 'Landmark Regular A', 'Landmark Regular B', Helvetica, Arial, sans-serif; 
 	font-weight: 400; 
 	font-style: normal;
-	font-size: 50px;
+}
+h1 {
+	font-size: 8em;
+	color: #c7f4ea;	
 	margin-bottom: .5em;
 }
 h2{
-	font-size: 22px;
+	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
+	font-weight: 400; 
+	font-style: normal;
+	font-size: 2em;
+	line-height: 1.5em;
 	padding-bottom: 1em;
 	margin-bottom: 1.5em;
+	color: #;
 }
 p {
 }
@@ -55,6 +63,10 @@ video {
 	width: 100%;
 }
 
+#logo {
+	font-size: 2em;
+	color: #FFF;
+}
 #header-email {
 	float: right;
 }
@@ -65,7 +77,23 @@ video {
 	padding-top: 200px;
 	background-color: #82DBC7;
 }
-
+/*#intro h1 {
+	position: relative;
+}*/
+#intro .hg {
+/*	position: absolute;
+	top: 0;
+	font-size: .8em;*/
+	color: #FFF;	
+}
+#intro p {
+	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
+	font-weight: 300; 
+	font-style: normal;
+	font-size: 1.75em;
+	color: #FFF;
+	letter-spacing: 3px;
+}
 /*----------------PROJECTS----------------*/
 .project {
 	background-color: #F8F8F8;
