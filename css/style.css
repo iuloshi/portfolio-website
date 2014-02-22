@@ -23,17 +23,18 @@ header .wrapper {
 }
 footer {
 	background-color: #707070;
-	color: white;
-	padding: 2em 0 3em;
+	color: #FFF;
+	padding: 2em 0;
 	text-align: center;
 	font-size: 1.5em;
 }
 footer a {
-	color: white;
+	color: #FFF;
 	text-align: center;
 	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
 	font-weight: 500; 
-	font-size: 1.25em;
+	font-size: 1.5em;
+	letter-spacing: 1px;
 }
 footer a:hover {
 	text-decoration: underline;
@@ -60,7 +61,7 @@ h2{
 	font-style: normal;
 	font-size: 2.25em;
 	line-height: 1.5em;
-	margin-bottom: 1.25em;
+	margin-bottom: 1em;
 	color: #505050;
 	text-align: center;
 }
@@ -238,11 +239,11 @@ video {
 
 /*-----------------FOOTER----------------*/
 .social-media {
-	font-size: 1.25em;
-	margin-top: 1em;
+	margin-top: 1.25em;
 }
 .social-media a {
-	padding: 15px;
+	font-size: 1em;
+	padding: 8px;
 }
 .social-media a:hover {
 	color: #c7f4ea;
