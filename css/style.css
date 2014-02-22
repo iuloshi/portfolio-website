@@ -15,7 +15,7 @@ header {
 	position: fixed;
 	top: 0;
 	z-index: 100;
-	background-color: rgba(130, 219, 199, .8);
+	background-color: rgba(130, 219, 199, .9);
 	line-height: 50px;
 }
 header .wrapper {
@@ -65,6 +65,13 @@ h2{
 	text-align: center;
 }
 p {
+	text-align: center;
+	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
+	font-weight: 400; 
+	font-style: normal;
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #505050;
 }
 /*-----------------MEDIA------------------*/
 img {
@@ -124,17 +131,23 @@ video {
 .project {
 	/*background-color: #F8F8F8;*/
 	padding: 7em 0;
+} 
+.project p {
+	width: 80%;
+	margin: auto;
 }
-.project p, 
 .project a {
+	display: block;
 	text-align: center;
 	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
 	font-weight: 500; 
 	font-style: normal;
+	color: black;
 	font-size: 1.25em;
+	margin-top: 1em;
 }
-.project a {
-	display: block;
+.project a:hover {
+	text-decoration: underline;
 }
 
 /*HMDA website*/
@@ -206,6 +219,9 @@ video {
 #proj-4 i:last-child {
 	right: 0;
 }
+#proj-4 i:hover {
+	color: #B0B0B0;
+}
 #proj-4 .slider-center {
 	display: inline-block;
 	width: 80%;
@@ -238,27 +254,45 @@ video {
 	body {
 		font-size: 14px;
 	}
-
 	#proj-1 .browser_wrapper {
 		height: 300px;
 	}
-
 	#proj-4 i {
 		font-size: 6em;
 	}
-
-
 }
 
 @media screen and (max-width: 480px) {
+	body {
+		font-size: 12px;
+	}
+	header a {
+		font-size: 1.25em;
+	}
+	h2 {
+		margin-bottom: 1em;
+	}
+	#intro h1 {
+		font-size: 7em;
+	}
+	.project {
+		padding: 3em 1em;
+	}
+	.project p {
+		font-size: 1.25em;
+	}
+	.project a {
+		font-size: 1.5em;
+	}
+	#proj-1 p {
+		margin-top: 3em;
+	}
 	#proj-1 .browser_wrapper {
 		height: 200px;
 	}
-
 	#proj-4 i {
 		font-size: 4em;
 	}
-
 }
 
 @media screen and (max-width: 320px) {
