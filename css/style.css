@@ -18,6 +18,9 @@ header {
 	background-color: rgba(130, 219, 199, .8);
 	line-height: 50px;
 }
+header .wrapper {
+	padding: 0 2%;
+}
 footer {
 	background-color: #707070;
 	color: white;
@@ -27,6 +30,14 @@ footer {
 }
 footer a {
 	color: white;
+	text-align: center;
+	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
+	font-weight: 500; 
+	font-size: 1.25em;
+}
+footer a:hover {
+	text-decoration: underline;
+	color: #c7f4ea;	
 }
 /*----------------TYPOGRAPHY--------------*/
 a {
@@ -45,13 +56,13 @@ h1 {
 }
 h2{
 	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
-	font-weight: 400; 
+	font-weight: 500; 
 	font-style: normal;
-	font-size: 2em;
+	font-size: 2.25em;
 	line-height: 1.5em;
-	padding-bottom: 1em;
-	margin-bottom: 1.5em;
-	color: #;
+	margin-bottom: 1.25em;
+	color: #505050;
+	text-align: center;
 }
 p {
 }
@@ -67,8 +78,23 @@ video {
 	font-size: 2em;
 	color: #FFF;
 }
+#logo:hover {
+	color: #c7f4ea;	
+}
+
 #header-email {
 	float: right;
+	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
+	font-weight: 300; 
+	font-style: normal;
+	font-size: 1.25em;
+}
+#header-email a {
+	color: #FFF;
+}
+#header-email a:hover {
+	text-decoration: underline;
+	color: #c7f4ea;
 }
 #intro {
 /*	height: 100%;*/
@@ -96,18 +122,25 @@ video {
 }
 /*----------------PROJECTS----------------*/
 .project {
-	background-color: #F8F8F8;
-	padding: 5em 0;
+	/*background-color: #F8F8F8;*/
+	padding: 7em 0;
 }
-.project h2 {
+.project p, 
+.project a {
 	text-align: center;
+	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
+	font-weight: 500; 
+	font-style: normal;
+	font-size: 1.25em;
+}
+.project a {
+	display: block;
 }
 
 /*HMDA website*/
 #proj-1 {
-	/*background-color: #FFF;*/
+	background-color: #E8E8E8;
 }
-
 #proj-1 .browser_wrapper { 
 	position: relative;
 	margin-left: auto;
@@ -116,7 +149,6 @@ video {
 	width: 75%;
 	height: 400px;
 }
-
 #proj-1 .browser_wrapper img,
 #proj-1 .browser_container img {
 	position: relative;
@@ -125,7 +157,6 @@ video {
 	top: 0;
 	padding: 0; 
 }
-
 #proj-1 .browser_container {
 	margin-top: -6px;
 	height: 98%;
@@ -134,20 +165,29 @@ video {
 	-moz-box-shadow:    0px 0px 40px 0px rgba(50, 50, 50, 0.4);
 	box-shadow:         0px 0px 40px 0px rgba(50, 50, 50, 0.4);
 }
+#proj-1 p {
+	margin-top: 5em;
+}
 
 /*cfpb.github.io*/
 #proj-2 {
-	/*background-color: #FFF;*/
+	background-color: #F0F0F0;
+}
+#proj-2 h2 {
+	margin-bottom: 0;
 }
 
 /*Stamp animation*/
 #proj-3 {
-	/*background-color: #FFF;*/
+	background-color: #F8F8F8;
+}
+#proj-3 .row {
+	padding-top: 2%;
 }
 
 /*Print & Packaging image carousel*/
 #proj-4 {
-	/*background-color: #FFF;*/
+	background-color: #FFF;
 }
 #proj-4 .wrapper {
 	position: relative; /*for absolute positioning of side arrows*/
@@ -160,7 +200,7 @@ video {
 	position: absolute;
 	top: 36%;
 	font-size: 10em;
-	color: white;
+	color: #E0E0E0;
 	cursor: pointer;
 }
 #proj-4 i:last-child {
@@ -175,6 +215,10 @@ video {
 #proj-4 .slider-image img {
 	width: 100%;
 }
+#proj-4 p {
+	font-size: 1.25em;
+	padding: .5em 0 1em 0;
+}
 
 /*-----------------FOOTER----------------*/
 .social-media {
@@ -182,7 +226,10 @@ video {
 	margin-top: 1em;
 }
 .social-media a {
-	padding: 5px;
+	padding: 15px;
+}
+.social-media a:hover {
+	color: #c7f4ea;
 }
 
 
