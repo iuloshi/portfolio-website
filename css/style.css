@@ -4,7 +4,6 @@ body {
 }*/
 
 body {
-	background-color: cyan;
 	color: black;
 	font-size: 16px;
 	line-height: 22px;
@@ -16,11 +15,11 @@ header {
 	position: fixed;
 	top: 0;
 	z-index: 100;
-	background-color: white;
+	background-color: rgba(130, 219, 199, .8);
 	line-height: 50px;
 }
 footer {
-	background-color: #333;
+	background-color: #383838;
 	color: white;
 	padding: 2em 0 3em;
 	text-align: center;
@@ -35,12 +34,14 @@ a {
 	text-decoration: none;
 }
 h1 {
+	font-family: 'Landmark Regular A', 'Landmark Regular B'; 
+	font-weight: 400; 
+	font-style: normal;
 	font-size: 50px;
 	margin-bottom: .5em;
 }
 h2{
 	font-size: 22px;
-	border-bottom: 1px black solid;
 	padding-bottom: 1em;
 	margin-bottom: 1.5em;
 }
@@ -67,6 +68,7 @@ video {
 
 /*----------------PROJECTS----------------*/
 .project {
+	background-color: #F8F8F8;
 	padding: 5em 0;
 }
 .project h2 {
@@ -75,7 +77,7 @@ video {
 
 /*HMDA website*/
 #proj-1 {
-	background-color: #CCC;
+	/*background-color: #FFF;*/
 }
 
 #proj-1 .browser_wrapper { 
@@ -107,17 +109,17 @@ video {
 
 /*cfpb.github.io*/
 #proj-2 {
-	background-color: #BBB;
+	/*background-color: #FFF;*/
 }
 
 /*Stamp animation*/
 #proj-3 {
-	background-color: #AAA;
+	/*background-color: #FFF;*/
 }
 
 /*Print & Packaging image carousel*/
 #proj-4 {
-	background-color: #888;
+	/*background-color: #FFF;*/
 }
 #proj-4 .wrapper {
 	position: relative; /*for absolute positioning of side arrows*/
