@@ -11,7 +11,7 @@
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{
-	color: #FFF;
+	color: #E0E0E0;
 	display: inline-block;
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */
@@ -48,7 +48,7 @@
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	background: #FFF;
+	background: #B0B0B0;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
@@ -62,7 +62,7 @@
 .owl-theme .owl-controls .owl-page span.owl-numbers{
 	height: auto;
 	width: auto;
-	color: #FFF;
+	color: #E0E0E0;
 	padding: 2px 10px;
 	font-size: 12px;
 	-webkit-border-radius: 30px;

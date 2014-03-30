@@ -3,7 +3,7 @@ $(document).ready(function(){
 //--------------Display header on scroll--------------
   function showHeader() {
     if ($(window).scrollTop() > 500) {
-      $("header").slideDown(100);
+      $("header").slideDown(250);
     }
     else {
       $("header").hide();
