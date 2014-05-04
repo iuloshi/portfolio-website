@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+//------------------Call fullPage JS------------------
+
+  $.fn.fullpage();
+
 //--------------Display header on scroll--------------
   function showHeader() {
     if ($(window).scrollTop() > 500) {
