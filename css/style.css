@@ -4,41 +4,12 @@ body {
 	line-height: 22px;
 }
 .wrapper {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 }
-header {
-	display: none;
-	height: 50px;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	z-index: 100;
-	background-color: rgba(130, 219, 199, .9);
-	line-height: 50px;
-}
-header .wrapper {
-	padding: 0 2%;
-}
-footer {
-	background-color: #707070;
-	color: #FFF;
-	padding: 2em 0;
-	text-align: center;
-	font-size: 1.5em;
-}
-footer a {
-	color: #FFF;
-	text-align: center;
-	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
-	font-weight: 500; 
-	font-size: 1.5em;
-	letter-spacing: 1px;
-}
-footer a:hover {
-	text-decoration: underline;
-	color: #C7F4EA;	
-}
+
+
+
 /*----------------TYPOGRAPHY--------------*/
 a {
 	color: black;
@@ -81,6 +52,21 @@ video {
 	width: 100%;
 }
 
+/*------------------HEADER-------------------*/
+header {
+	display: none;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	background-color: rgba(130, 219, 199, .9);
+	line-height: 50px;
+}
+header .wrapper {
+	padding: 0 2%;
+}
+
 #logo {
 	font-size: 2em;
 	color: #FFF;
@@ -103,6 +89,8 @@ video {
 	text-decoration: underline;
 	color: #C7F4EA;
 }
+
+/*------------------INTRO-------------------*/
 #intro {
 	text-align: center;
 	background-color: #82DBC7;
@@ -185,7 +173,7 @@ video {
 	margin-top: 5em;
 }
 
-/*cfpb.github.io*/
+/*cfpb.github.io / CFPB OpenTech site*/
 #proj-2 {
 	background-color: #F0F0F0;
 }
@@ -201,55 +189,19 @@ video {
 	padding-top: 2%;
 }
 
-/*Print & Packaging image carousel*/
+/**/
 #proj-4 {
 	background-color: #FFF;
 }
-#proj-4 .wrapper {
-	position: relative; /*for absolute positioning of side arrows*/
-}
-#proj-4 .arrow-container {
-	width: 10%;
-}
-#proj-4 i {
-	display: none;
-	position: absolute;
-	top: 36%;
-	font-size: 10em;
-	color: #E0E0E0;
-	cursor: pointer;
-}
-#proj-4 i:last-child {
-	right: 0;
-}
-#proj-4 i:hover {
-	color: #B0B0B0;
-}
-#proj-4 .slider-center {
-	display: inline-block;
-	width: 80%;
-	text-align: center;
-	margin: 0 10%;
-}
-#proj-4 .slider-image img {
-	width: 100%;
-}
-#proj-4 p {
-	font-size: 1.25em;
-	padding: .5em 0 1em 0;
-}
-
 
 /*-------------MEDIA QUERIES-------------*/
+
 @media screen and (max-width: 768px) {
 	body {
 		font-size: 14px;
 	}
 	#proj-1 .browser_wrapper {
 		height: 300px;
-	}
-	#proj-4 i {
-		font-size: 6em;
 	}
 }
 
@@ -275,18 +227,17 @@ video {
 	.project a {
 		font-size: 1.5em;
 	}
-	#proj-1 p {
-		margin-top: 3em;
-	}
 	#proj-1 .browser_wrapper {
 		height: 200px;
-	}
-	#proj-4 i {
-		font-size: 4em;
 	}
 }
 
 @media screen and (max-width: 320px) {
 
-
 }
+
+
+
+
+
+
