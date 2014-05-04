@@ -3,6 +3,10 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 }
+.wrapper {
+	width: 960px;
+	margin: auto;
+}
 header {
 	display: none;
 	height: 50px;
