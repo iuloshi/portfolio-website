@@ -6,12 +6,7 @@ $(document).ready(function(){
 
 //--------------Display header on scroll--------------
   function showHeader() {
-    if ($(window).scrollTop() > 500) {
-      $("header").slideDown(250);
-    }
-    else {
-      $("header").hide();
-    }
+    $("header").slideDown(250);
   }
   $(window).scroll(showHeader); // check on scroll
   showHeader();// check on load
