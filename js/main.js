@@ -5,11 +5,10 @@ $(document).ready(function(){
   $.fn.fullpage();
 
 //--------------Display header on scroll--------------
-  function showHeader() {
+
+  $(window).scroll(function(){
     $("header").slideDown(250);
-  }
-  $(window).scroll(showHeader); // check on scroll
-  showHeader();// check on load
+  });
 
 //--------Browser animation for HMDA homepage---------
   function animateImages() {
@@ -54,34 +53,6 @@ $(document).ready(function(){
   
 //--------FitVids fluid-width video player---------
   $("#vimeo-iframe").fitVids();
-
-//--OWL Carousel/jQuery plugin for responsive image slider--
-  $("#image-slider").owlCarousel({
-  	items: 1, 
-    itemsDesktop: false,
-    itemsDesktopSmall: false,
-    itemsTablet: false,
-    itemsMobile: false,
-    autoHeight: true,
-    slideSpeed : 300,
-    paginationSpeed : 400,
-	  navigation: false,
-    // autoPlay: 5000
-  });
-  $(".fa-angle-right").click(function(){
-		$("#image-slider").trigger('owl.next');
-	});
-	$(".fa-angle-left").click(function(){
-		$("#image-slider").trigger('owl.prev');
-	});
-  //----display arrows on hover of larger viewports-----
-  if ($(window).width() > 480) { 
-    $("#proj-4").hover(function(){
-      $("#proj-4 i").fadeToggle(500);
-    });
-  }
-
-
 
 
 });
