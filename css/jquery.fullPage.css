@@ -53,7 +53,7 @@ html, body {
     float: left;
     position: relative;
 }
-.controlArrow {
+/*.controlArrow {
     position: absolute;
     top: 50%;
     cursor: pointer;
@@ -72,7 +72,7 @@ html, body {
     right: 15px;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
-}
+}*/
 .scrollable {
     overflow: scroll;
 }
@@ -135,7 +135,7 @@ html, body {
 }
 #fullPage-nav li .active span,
 .fullPage-slidesNav .active span {
-    background: #333;
+    background: #FFF;
 }
 #fullPage-nav span,
 .fullPage-slidesNav span {
@@ -143,7 +143,7 @@ html, body {
     left: 2px;
     width: 8px;
     height: 8px;
-    border: 1px solid #000;
+    border: 1px solid #FFF;
     background: rgba(0, 0, 0, 0);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;

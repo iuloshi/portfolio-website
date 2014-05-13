@@ -10,10 +10,10 @@ body {
 
 /*----------------TYPOGRAPHY--------------*/
 a {
-	color: black;
 	text-decoration: none;
 }
-h1, #logo {
+h1,
+#logo {
 	font-family: 'Landmark Regular A', 'Landmark Regular B', Helvetica, Arial, sans-serif; 
 	font-weight: 400; 
 	font-style: normal;
@@ -29,7 +29,7 @@ h2{
 	font-size: 2.25em;
 	line-height: 1.5em;
 	margin-bottom: 1em;
-	color: #505050;
+	color: #000;
 	text-align: center;
 }
 p {
@@ -43,16 +43,14 @@ p {
 }
 
 /*-----------------MEDIA------------------*/
-img {
-	width: 100%;
-}
+img,
 video {
 	width: 100%;
 }
 
 /*------------------HEADER-------------------*/
 header {
-	display: none;
+	/*display: none;*/
 	height: 50px;
 	width: 100%;
 	position: fixed;
@@ -67,12 +65,14 @@ header .wrapper {
 
 #logo {
 	font-size: 2em;
-	color: #FFF;
+	color: #C7F4EA;
 }
 #logo:hover {
-	color: #C7F4EA;	
+	color: #FFF;	
 }
-
+.hg {
+	color: #FFF;	
+}
 #header-email {
 	float: right;
 	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
@@ -92,9 +92,6 @@ header .wrapper {
 #intro {
 	text-align: center;
 	background-color: #82DBC7;
-}
-#intro .hg {
-	color: #FFF;	
 }
 #intro p {
 	margin-top: 1.5em;
@@ -119,24 +116,37 @@ header .wrapper {
 }
 /*----------------PROJECTS----------------*/
 .project {
-	/*background-color: #F8F8F8;*/
 } 
 .project p {
 	width: 80%;
 	margin: auto;
 }
-.project a {
-	display: block;
+.project .btn-ctr {
 	text-align: center;
+}
+.project a.button {
+	float: left;
+	padding: .5em 1em;
+	margin-right: 3em;
 	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
 	font-weight: 500; 
 	font-style: normal;
-	color: black;
+	text-align: center;
 	font-size: 1.25em;
-	margin-top: 1em;
+	color: #686868;
+	border: 2px solid #82DBC7;
+	text-decoration: none;
 }
-.project a:hover {
-	text-decoration: underline;
+.project a.button:hover {
+	background-color: #82DBC7;
+	color: white;
+}
+.project a.button i {
+	font-size: .7em;
+	margin-left: .25em;
+}
+.project a.button i.fa-arrow-left {
+	margin: 0 .5em 0 0;
 }
 
 /*HMDA website*/
@@ -167,24 +177,18 @@ header .wrapper {
 	-moz-box-shadow:    0px 0px 40px 0px rgba(50, 50, 50, 0.4);
 	box-shadow:         0px 0px 40px 0px rgba(50, 50, 50, 0.4);
 }
-#proj-1 p {
+#proj-1 a {
 	margin-top: 5em;
 }
 
-/*cfpb.github.io / CFPB OpenTech site*/
+/*CFPB OpenTech site*/
 #proj-2 {
 	background-color: #F0F0F0;
-}
-#proj-2 h2 {
-	margin-bottom: 0;
 }
 
 /*Stamp animation*/
 #proj-3 {
 	background-color: #F8F8F8;
-}
-#proj-3 .row {
-	padding-top: 2%;
 }
 
 /**/

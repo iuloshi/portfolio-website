@@ -6,9 +6,9 @@ $(document).ready(function(){
 
 //--------------Display header on scroll--------------
 
-  $(window).scroll(function(){
-    $("header").slideDown(250);
-  });
+  // $(window).scroll(function(){
+  //   $("header").slideDown(250);
+  // });
 
 //--------Browser animation for HMDA homepage---------
   function animateImages() {

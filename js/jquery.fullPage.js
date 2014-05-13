@@ -17,7 +17,7 @@
 			'scrollingSpeed': 700,
 			'easing': 'easeInQuart',
 			'menu': false,
-			'navigation': false,
+			'navigation': true,
 			'navigationPosition': 'right',
 			'navigationColor': '#000',
 			'navigationTooltips': [],
