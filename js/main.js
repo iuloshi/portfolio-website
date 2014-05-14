@@ -4,13 +4,14 @@ $(document).ready(function(){
 
   $.fn.fullpage({
     afterSlideLoad: function(anchorLink, index){
-      if( index==2 ) {
+      if( anchorLink=='hmda' && index==2 ) {
+        resetImage();
         animateImage();
       }
     },
     onSlideLeave: function(anchorLink, index){
       $(".browser_container img").stop(true, false);
-      resetImage();
+      
     }
   });
 
@@ -21,7 +22,7 @@ $(document).ready(function(){
       var newTop = ($(this).height() - frameHeight) * -1;
       
       if( parseInt($(this).css( "top" ), 10) >= -1) {
-        $(this).animate({
+        $(this).delay( 500 ).animate({
           top: newTop
         }, 10000, "swing", function() {
           $(this).stop(true, false);
@@ -33,7 +34,7 @@ $(document).ready(function(){
   }
 
   function resetImage() {
-    $(".browser_container img").delay( 4000 ).css( "top", 0 );
+    $(".browser_container img").css( "top", 0 );
   }
   
 //--------FitVids fluid-width video player---------
