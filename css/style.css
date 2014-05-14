@@ -117,17 +117,12 @@ header .wrapper {
 /*----------------PROJECTS----------------*/
 .project {
 } 
-.project p {
-	width: 80%;
-	margin: auto;
-}
 .project .btn-ctr {
 	text-align: center;
 	margin-top: 4em;
 }
 .project a.button {
 	padding: .5em 1em;
-	margin-right: 3em;
 	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
 	font-weight: 500; 
 	font-style: normal;
@@ -136,6 +131,9 @@ header .wrapper {
 	color: #686868;
 	border: 2px solid #82DBC7;
 	text-decoration: none;
+}
+.project a.button:nth-child(2) {
+	margin-left: 3em;
 }
 .project a.button:hover {
 	background-color: #82DBC7;
@@ -147,6 +145,10 @@ header .wrapper {
 }
 .project a.button i.fa-arrow-left {
 	margin: 0 .5em 0 0;
+}
+.project p {
+	width: 80%;
+	margin: auto;
 }
 
 /*HMDA website*/
@@ -177,6 +179,9 @@ header .wrapper {
 	-moz-box-shadow:    0px 0px 40px 0px rgba(50, 50, 50, 0.4);
 	box-shadow:         0px 0px 40px 0px rgba(50, 50, 50, 0.4);
 }
+#proj-1 .bump-down {
+	margin-top: 7em;
+}
 
 /*CFPB OpenTech site*/
 #proj-2 {
@@ -195,7 +200,7 @@ header .wrapper {
 
 /*-------------MEDIA QUERIES-------------*/
 
-@media screen and (max-width: 768px) and (min-width: 481px) {
+@media screen and (max-width: 768px) and (max-device-width: 768px) {
 	body {
 		font-size: 14px;
 	}
@@ -204,7 +209,7 @@ header .wrapper {
 	}
 }
 
-@media screen and (max-width: 480px) and (min-width: 321px) {
+@media screen and (max-width: 480px) and (max-device-width: 480px) {
 	body {
 		font-size: 12px;
 	}
@@ -231,7 +236,7 @@ header .wrapper {
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (max-device-width: 320px) {
 
 }
 
