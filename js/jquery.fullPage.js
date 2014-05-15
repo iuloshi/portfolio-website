@@ -13,7 +13,7 @@
 			"verticalCentered" : true,
 			'resize' : false,
 			'slidesColor' : [],
-			'anchors':['', 'hmda', 'opentech', 'stamps'],
+			'anchors':['', 'hmda', 'new-market-goods', 'open-tech', 'design-manual', 'stamps'],
 			'scrollingSpeed': 700,
 			'easing': 'easeInQuart',
 			'menu': false,

@@ -28,9 +28,18 @@ h2{
 	font-style: normal;
 	font-size: 2.25em;
 	line-height: 1.5em;
-	margin-bottom: 1em;
-	color: #000;
+	margin-bottom: .5em;
 	text-align: center;
+}
+h3 {
+	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
+	font-weight: 500; 
+	font-style: normal;
+	font-size: 1.125em;
+	line-height: 1.5em;
+	margin-bottom: .5em;
+	text-align: center;
+	text-transform: capitalize;
 }
 p {
 	text-align: center;
@@ -48,7 +57,7 @@ video {
 	width: 100%;
 }
 img.imac {
-	width: 60%;
+	width: 70%;
 }
 
 /*------------------HEADER-------------------*/
@@ -121,7 +130,9 @@ header .wrapper {
 .project {
 } 
 .project .btn-ctr {
-	text-align: center;
+	margin-top: 2em;
+}
+.project .slide:nth-child(2) .btn-ctr {
 	margin-top: 4em;
 }
 .project a.button {
@@ -149,9 +160,14 @@ header .wrapper {
 .project a.button i.fa-arrow-left {
 	margin: 0 .5em 0 0;
 }
+.project a.button i.fa-github {
+	font-size: 1em;
+}
 .project p {
 	width: 80%;
 	margin: auto;
+	margin-bottom: 2em;
+
 }
 
 /*HMDA website*/
@@ -186,20 +202,26 @@ header .wrapper {
 	margin-top: 7em;
 }
 
-/*CFPB OpenTech site*/
+/*New Market Goods website*/
 #proj-2 {
-	background-color: #F0F0F0;
+	background-color: #E8E8E8;
+}
+
+/*CFPB OpenTech website*/
+#proj-3 {
+	background-color: #E8E8E8;
+}
+
+/*CFPB Design Manual website*/
+#proj-4 {
+	background-color: #E8E8E8;
 }
 
 /*Stamp animation*/
-#proj-3 {
-	background-color: #F8F8F8;
+#proj-5 {
+	background-color: #E8E8E8;
 }
 
-/**/
-#proj-4 {
-	background-color: #FFF;
-}
 
 /*-------------MEDIA QUERIES-------------*/
 
