@@ -47,6 +47,9 @@ img,
 video {
 	width: 100%;
 }
+img.imac {
+	width: 60%;
+}
 
 /*------------------HEADER-------------------*/
 header {

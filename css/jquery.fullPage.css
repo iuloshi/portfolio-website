@@ -29,6 +29,7 @@ html, body {
 .slide, .slidesContainer {
     height: 100%;
     display: block;
+    text-align: center;
 }
 .slides {
     height: 100%;
