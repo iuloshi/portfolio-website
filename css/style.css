@@ -10,7 +10,12 @@ body {
 
 /*----------------TYPOGRAPHY--------------*/
 a {
+	text-decoration: underline;
+	color: #505050;
+}
+a:hover {
 	text-decoration: none;
+	color: black;
 }
 h1,
 #logo {
@@ -60,7 +65,6 @@ img.imac {
 
 /*------------------HEADER-------------------*/
 header {
-	/*display: none;*/
 	height: 50px;
 	width: 100%;
 	position: fixed;
@@ -72,15 +76,16 @@ header {
 header .wrapper {
 	padding: 0 2%;
 }
-
+header a {
+	text-decoration: none;
+}
 #logo {
 	font-size: 2em;
 	color: #C7F4EA;
 }
-#logo:hover {
-	color: #FFF;	
-}
-.hg {
+#logo:hover,
+.hg,
+#header-email a {
 	color: #FFF;	
 }
 #header-email {
@@ -89,9 +94,6 @@ header .wrapper {
 	font-weight: 300; 
 	font-style: normal;
 	font-size: 1.25em;
-}
-#header-email a {
-	color: #FFF;
 }
 #header-email a:hover {
 	text-decoration: underline;
@@ -293,9 +295,6 @@ header .wrapper {
 	.project p {
 		line-height: 1.25em;
 		margin-bottom: 1em;
-	}
-	.project a {
-		font-size: 1.5em;
 	}
 	.project a.button {
 		border: 2px solid #82DBC7;
