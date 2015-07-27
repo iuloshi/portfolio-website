@@ -145,22 +145,36 @@ header a {
 	border: 3px solid #82DBC7;
 	text-decoration: none;
 }
-.project a.button:nth-child(2) {
+.project a.button:nth-child(2),
+.project a.cta-link:nth-child(3) {
 	margin-left: 3em;
 }
 .project a.button:hover {
 	background-color: #82DBC7;
 	color: white;
 }
-.project a.button i {
+.project a.button i,
+.project a.cta-link i {
 	font-size: .7em;
 	margin-left: .25em;
 }
-.project a.button i.fa-arrow-left {
+.project a.button i.fa-arrow-left,
+.project a.cta-link i.fa-arrow-left {
 	margin: 0 .5em 0 0;
 }
 .project a.button i.fa-github {
 	font-size: 1em;
+}
+.project a.cta-link {
+	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
+	font-weight: 500; 
+	font-style: normal;
+	font-size: 1.25em;
+	color: #686868;
+	text-decoration: none;
+}
+.project a.cta-link:hover {
+	color: #fff;
 }
 .project p {
 	width: 80%;
@@ -168,11 +182,15 @@ header a {
 	margin-bottom: 2em;
 
 }
-
-/*HMDA website*/
-#proj-1 {
+#proj-1, 
+#proj-2, 
+#proj-3, 
+#proj-4 {
 	background-color: #E8E8E8;
 }
+
+/*HMDA website*/
+
 #proj-1 .browser_wrapper { 
 	position: relative;
 	margin-left: auto;
@@ -199,26 +217,6 @@ header a {
 }
 #proj-1 .bump-down {
 	margin-top: 7em;
-}
-
-/*New Market Goods website*/
-#proj-2 {
-	background-color: #E8E8E8;
-}
-
-/*CFPB OpenTech website*/
-#proj-3 {
-	background-color: #E8E8E8;
-}
-
-/*CFPB Design Manual website*/
-#proj-4 {
-	background-color: #E8E8E8;
-}
-
-/*Stamp animation*/
-#proj-5 {
-	background-color: #E8E8E8;
 }
 
 
@@ -311,10 +309,6 @@ header a {
 	#proj-1 .bump-down {
 		margin-top: 5em;
 	}
-
-}
-
-@media screen and (max-width: 320px) {
 
 }
 
