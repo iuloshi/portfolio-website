@@ -10,8 +10,7 @@ $(document).ready(function(){
       }
     },
     onSlideLeave: function(anchorLink, index){
-      $(".browser_container img").stop(true, false);
-      
+      $(".browser_container img").stop(true, false);      
     }
   });
 
@@ -36,8 +35,5 @@ $(document).ready(function(){
   function resetImage() {
     $(".browser_container img").css( "top", 0 );
   }
-  
-//--------FitVids fluid-width video player---------
-  $("#vimeo-iframe").fitVids();
 
-});
+});  

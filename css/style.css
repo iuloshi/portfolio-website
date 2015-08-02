@@ -1,5 +1,6 @@
 body {
 	color: black;
+	background-color: #E8E8E8;
 	font-size: 16px;
 	line-height: 22px;
 }
@@ -181,12 +182,6 @@ header a {
 	margin: auto;
 	margin-bottom: 2em;
 
-}
-#proj-1, 
-#proj-2, 
-#proj-3, 
-#proj-4 {
-	background-color: #E8E8E8;
 }
 
 /*HMDA website*/
