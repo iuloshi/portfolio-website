@@ -98,7 +98,6 @@ header a {
 }
 #header-email a:hover {
 	text-decoration: underline;
-	color: #C7F4EA;
 }
 
 /*------------------INTRO-------------------*/
@@ -152,7 +151,7 @@ header a {
 }
 .project a.button:hover {
 	background-color: #82DBC7;
-	color: white;
+	color: #fff;
 }
 .project a.button i,
 .project a.cta-link i {
@@ -175,7 +174,7 @@ header a {
 	text-decoration: none;
 }
 .project a.cta-link:hover {
-	color: #fff;
+	color: #82DBC7;
 }
 .project p {
 	width: 80%;
