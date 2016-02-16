@@ -20,17 +20,19 @@ a:hover {
 }
 h1,
 #logo {
-	font-family: 'Landmark Regular A', 'Landmark Regular B', Helvetica, Arial, sans-serif; 
+	font-family: 'Poiret One', cursive; 
 	font-weight: 400; 
 	font-style: normal;
 }
 h1 {
 	font-size: 8em;
 	color: #C7F4EA;	
+	text-transform: uppercase;
+	letter-spacing: 5px;
 }
 h2{
-	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
-	font-weight: 500; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 400; 
 	font-style: normal;
 	font-size: 2.25em;
 	line-height: 1.5em;
@@ -38,21 +40,21 @@ h2{
 	text-align: center;
 }
 h3 {
-	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
-	font-weight: 500; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 400; 
 	font-style: normal;
-	font-size: 1.125em;
+	font-size: 1.25em;
 	line-height: 1.5em;
 	margin-bottom: .5em;
 	text-align: center;
 }
 p {
 	text-align: center;
-	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400; 
 	font-style: normal;
 	font-size: 1em;
-	line-height: 1.5em;
+	line-height: 1.75em;
 	color: #505050;
 }
 
@@ -83,6 +85,8 @@ header a {
 #logo {
 	font-size: 2em;
 	color: #C7F4EA;
+	text-transform: uppercase;
+	letter-spacing: 3px;
 }
 #logo:hover,
 .hg,
@@ -91,7 +95,7 @@ header a {
 }
 #header-email {
 	float: right;
-	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 300; 
 	font-style: normal;
 	font-size: 1.25em;
@@ -106,12 +110,12 @@ header a {
 	background-color: #82DBC7;
 }
 #intro p {
-	margin-top: 1.5em;
-	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
+	margin-top: 2em;
+	font-family: 'Lato', sans-serif;
 	font-weight: 300; 
 	font-style: normal;
-	font-size: 2.1em;
-	letter-spacing: 3px;
+	font-size: 1.9em;
+	letter-spacing: 4px;
 	color: #C7F4EA;
 }
 #intro .social-media {
@@ -136,12 +140,12 @@ header a {
 }
 .project a.button {
 	padding: .5em 1em;
-	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
-	font-weight: 500; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 400; 
 	font-style: normal;
 	text-align: center;
-	font-size: 1.25em;
-	color: #686868;
+	font-size: 1em;
+	color: #63CCB4;
 	border: 3px solid #82DBC7;
 	text-decoration: none;
 }
@@ -166,10 +170,10 @@ header a {
 	font-size: 1em;
 }
 .project a.cta-link {
-	font-family: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
-	font-weight: 500; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 400; 
 	font-style: normal;
-	font-size: 1.25em;
+	font-size: 1em;
 	color: #686868;
 	text-decoration: none;
 }
@@ -180,7 +184,7 @@ header a {
 	width: 80%;
 	margin: auto;
 	margin-bottom: 2em;
-
+	font-weight: 300;
 }
 
 /*HMDA website*/
