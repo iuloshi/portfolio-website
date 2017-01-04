@@ -1,0 +1,89 @@
+// Global style overrides
+// ----------------------
+
+h1 {
+	font-family: 'Abril Fatface', cursive;
+}
+h2,h3,h4,h5 {
+	text-transform: uppercase;
+	font-style: bold;
+}
+h2,h3,h4,h5,h6 {
+	letter-spacing: 3px;
+}
+a {
+	color: inherit;
+	&:hover {
+		color: #ccc;
+	}
+}
+
+// Nav
+// ---
+
+.contact {
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 3px;
+	font-size: .75rem;
+	&:hover {
+		border-bottom: 1px solid;
+	}
+}
+.social-media {
+	font-size: 1.2rem;
+
+	a {
+		padding: 0 .3rem;		
+	}
+}
+
+// Header
+// ------
+
+header {
+	margin: 10rem 0 13rem;
+	text-align: center;
+}
+
+// Portfolio
+// ---------
+
+.portfolio {
+	.project {
+		height: 20rem;
+	 	filter: grayscale(100%);
+
+		&.proj-1 {
+			background: url(../img/thumb_hmda.png);
+		}
+		&.proj-2 {
+			background: url(../img/thumb_hmda.png);
+		}
+		&.proj-3 {
+			background: url(../img/thumb_hmda.png);
+		}
+		&.proj-4 {
+			background: url(../img/thumb_hmda.png);
+		}
+		&.proj-5 {
+			background: url(../img/thumb_hmda.png);
+		}
+		&.proj-6 {
+			background: url(../img/thumb_hmda.png);
+		}		
+		&.proj-1:hover,
+		&.proj-2:hover,
+		&.proj-3:hover,
+		&.proj-4:hover,
+		&.proj-5:hover,
+		&.proj-6:hover, {
+		  -webkit-filter: grayscale(0%);
+		  -webkit-transition: .25s ease-in-out;
+		  -moz-filter: grayscale(0%);
+		  -moz-transition: .25s ease-in-out;
+		  -o-filter: grayscale(0%);
+		  -o-transition: .25s ease-in-out;
+		  filter: grayscale(0%);
+		}				
+	}
+}
