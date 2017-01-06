@@ -14,26 +14,41 @@ h2,h3,h4,h5,h6 {
 a {
 	color: inherit;
 	&:hover {
-		color: #ccc;
+		color: $primary-color;
 	}
+}
+::selection {
+  background: $primary-color;
+  color: $white; 
+}
+::-moz-selection {
+  background: $primary-color;
+  color: $white;
 }
 
 // Nav
 // ---
-
-.contact {
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: 3px;
-	font-size: .75rem;
-	&:hover {
-		border-bottom: 1px solid;
+nav {
+	.title-bar {
+	  background: -webkit-linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.6)); 
+	  background: -o-linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.6)); 
+	  background: -moz-linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.6));
+	  background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.6));
 	}
-}
-.social-media {
-	font-size: 1.2rem;
+	.contact {
+		font-family: 'Roboto', sans-serif;
+		letter-spacing: 3px;
+		font-size: .75rem;
+		&:hover {
+			border-bottom: 1px solid;
+		}
+	}
+	.social-media {
+		font-size: 1.2rem;
 
-	a {
-		padding: 0 .3rem;		
+		a {
+			padding: 0 .3rem;		
+		}
 	}
 }
 
@@ -43,6 +58,10 @@ a {
 header {
 	margin: 10rem 0 13rem;
 	text-align: center;
+
+	.pipe {
+		padding: 0 .5em;
+	}
 }
 
 // Portfolio
