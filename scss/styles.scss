@@ -1,15 +1,27 @@
 // Global style overrides
 // ----------------------
 
-h1 {
+h1,h2,h3 {
 	font-family: 'Abril Fatface', cursive;
 }
-h2,h3,h4,h5 {
-	text-transform: uppercase;
-	font-style: bold;
+h5 {
+	letter-spacing: .5px;
 }
-h2,h3,h4,h5,h6 {
+h6 {
 	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+p {
+	font-size: .835rem;
+	margin-bottom: .65rem;
+}
+p.copy__caption-label {
+	font-family: 'Roboto', sans-serif;
+  font-size: .75rem;
+  letter-spacing: .75px;
+  font-style: italic;
+  margin-top: .3rem;
 }
 a {
 	color: inherit;
@@ -17,6 +29,28 @@ a {
 		color: $primary-color;
 	}
 }
+.button {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: $white;
+	color: $black;
+	border: 1px solid;
+	padding: .67rem 3rem;
+  margin-top: 2rem;
+
+	&:hover {
+		background-color: $black;
+		color: $white;
+	}
+
+	&.button--small {
+		font-size: .67rem;
+		padding: 0.4rem .6rem;
+	}
+}
+
 ::selection {
   background: $primary-color;
   color: $white; 
@@ -26,16 +60,12 @@ a {
   color: $white;
 }
 
-// Nav
-// ---
-nav {
-	.title-bar {
-	  background: -webkit-linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.6)); 
-	  background: -o-linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.6)); 
-	  background: -moz-linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.6));
-	  background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,.6));
-	}
-	.contact {
+
+// Homepage
+// --------
+
+.nav--home, .nav--project {
+	.contact, .home {
 		font-family: 'Roboto', sans-serif;
 		letter-spacing: 3px;
 		font-size: .75rem;
@@ -52,57 +82,94 @@ nav {
 	}
 }
 
-// Header
-// ------
-
 header {
 	margin: 10rem 0 13rem;
 	text-align: center;
 
+	h5 {
+		font-size: .85rem;
+		letter-spacing: 3px;
+	}
 	.pipe {
-		padding: 0 .5em;
+		padding: 0 .5rem;
 	}
 }
 
-// Portfolio
-// ---------
-
 .portfolio {
 	.project {
-		height: 20rem;
-	 	filter: grayscale(100%);
+		position: relative;
 
-		&.proj-1 {
-			background: url(../img/thumb_hmda.png);
+	 	&.proj1,
+	 	&.proj3,
+	 	&.proj5 {
+	 		margin-bottom: 2rem;
+	 	}
+		
+		.project--hover {
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			z-index: 1;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(40,40,40,.9);
+			-webkit-transition: opacity 0.3s;
+			-moz-transition: opacity 0.3s;
+			-o-transition: opacity 0.3s;
+			transition: opacity 0.3s;
+
+			h6 {
+				padding: 35% 2rem;
+				text-align: center;
+				color: $white;
+			}
 		}
-		&.proj-2 {
-			background: url(../img/thumb_hmda.png);
-		}
-		&.proj-3 {
-			background: url(../img/thumb_hmda.png);
-		}
-		&.proj-4 {
-			background: url(../img/thumb_hmda.png);
-		}
-		&.proj-5 {
-			background: url(../img/thumb_hmda.png);
-		}
-		&.proj-6 {
-			background: url(../img/thumb_hmda.png);
-		}		
-		&.proj-1:hover,
-		&.proj-2:hover,
-		&.proj-3:hover,
-		&.proj-4:hover,
-		&.proj-5:hover,
-		&.proj-6:hover, {
-		  -webkit-filter: grayscale(0%);
-		  -webkit-transition: .25s ease-in-out;
-		  -moz-filter: grayscale(0%);
-		  -moz-transition: .25s ease-in-out;
-		  -o-filter: grayscale(0%);
-		  -o-transition: .25s ease-in-out;
-		  filter: grayscale(0%);
+		&:hover {
+			.project--hover {
+				opacity: 1;
+			}
 		}				
+	}
+}
+
+.about {
+	margin: 10rem 13rem;
+	text-align: center;	
+}
+
+
+// Project Pages
+// -------------
+
+.project__copy {
+	margin-top: 2rem;
+
+	h2,h5 {
+		text-align: right;
+	} 
+	h2 {
+		line-height: 1.25;
+	}
+	.copy__title {
+		.button--small {
+			float: right;
+			margin-top: 1.25rem;
+		}
+	}
+	.copy__body {
+		margin-top: 4.05rem;
+
+		h6 {
+			padding-top: 1.4em;
+		}
+	}
+}
+.project__images {
+	margin-top: 3rem;
+
+	.image__container {
+		background-color: $light-gray;
+		height: 400px;
+		margin-top: 1.5rem;
 	}
 }
