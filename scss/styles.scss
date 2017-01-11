@@ -70,7 +70,7 @@ a {
 		letter-spacing: 3px;
 		font-size: .75rem;
 		&:hover {
-			border-bottom: 1px solid;
+//			border-bottom: 2px solid;
 		}
 	}
 	.social-media {
@@ -85,6 +85,28 @@ a {
 header {
 	margin: 10rem 0 13rem;
 	text-align: center;
+
+	// Mehgan hover
+	a.link--mehgan, 
+	a.link--mehgan:hover {
+		color: $black;
+	}
+	.link--mehgan span {
+		color: $black;
+		display: inline-block;
+		position: relative;
+		-webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+		transform: perspective(1000px) rotate3d(0,1,0,0deg);
+		-webkit-transition: -webkit-transform 0.5s, color 0.5s;
+		transition: transform 0.5s, color 0.5s;
+		-webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+		transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+	}
+	.link--mehgan:hover span {
+		color: $primary-color;
+		-webkit-transform: perspective(1000px) rotate3d(0,1,0,180deg);
+		transform: perspective(1000px) rotate3d(0,1,0,180deg);
+	}
 
 	h5 {
 		font-size: .85rem;
