@@ -38,58 +38,70 @@
       <div class="large-10 large-centered column">
         <div class="row">
           <div class="large-4 medium-4 columns">
-            <div class="project proj1">
-              <a href="ira-transfers.html" alt="IRA Transfers">
-                <div class="project--hover">
-                  <h6>IRAs, FTW</h6>
-                </div>
-                <img src="img/thumb_IRA-transfers.png" alt="IRA Transfers" height="100%" width="100%">
-              </a>
+            <div class="project proj1 grid">
+              <figure class="effect-milo">
+                <img src="img/thumb_IRA-transfers.png" alt="IRA Transfers">
+                <figcaption>
+                  <h2>IRAs, FTW</h2>
+                  <h5>Helping women retire like a boss.</h5>
+                  <a href="ira-transfers.html" alt="IRA Transfers">View more</a>
+                </figcaption>     
+              </figure>
             </div>
-            <div class="project proj2">
-              <a href="ira-transfers.html" alt="IRA Transfers">
-                <div class="project--hover">
-                  <h6>An easier way to access &amp; visualize mortgage data.</h6>
-                </div>              
-                <img src="img/thumb_hmda.png" alt="Mortgage Database" height="100%" width="100%">
-              </a>
-            </div>
-          </div>
-          <div class="large-4 medium-4 columns">
-            <div class="project proj3">
-              <a href="ira-transfers.html" alt="IRA Transfers">
-                <div class="project--hover">
-                  <h6>Ladies Investing in their goals</h6>
-                </div>
-                <img src="img/thumb_funding-flow.png" alt="Funding Flow" height="100%" width="100%">
-              </a>
-            </div>
-            <div class="project proj4">
-              <a href="ira-transfers.html" alt="IRA Transfers">  
-                <div class="project--hover">
-                  <h6>Strategically planning a resource center</h6>
-                </div>
-                <img src="img/thumb_resource-center.png" alt="Resource Center" height="100%" width="100%">              
-              </a>
+            <div class="project proj2 grid">
+              <figure class="effect-milo">
+                <img src="img/thumb_hmda.png" alt="Mortgage Database">
+                <figcaption>
+                  <h2>Mortgage Database</h2>
+                  <h5>An easier way to access &amp; visualize mortgage data.</h5>
+                  <a href="#" alt="Mortgage database">View more</a>
+                </figcaption>     
+              </figure>              
             </div>
           </div>
           <div class="large-4 medium-4 columns">
-            <div class="project proj5">
-              <a href="ira-transfers.html" alt="IRA Transfers">
-                <div class="project--hover">
-                  <h6>An immersive e&#8209;commerce experience</h6>
-                </div>
-                <img src="img/thumb_NMG.png" alt="New Market Goods" height="100%" width="100%">
-              </a>
+            <div class="project proj3 grid">
+              <figure class="effect-milo">
+                <img src="img/thumb_funding-flow.png" alt="Funding Flow">
+                <figcaption>
+                  <h2>A new conversion flow</h2>
+                  <h5>Ladies investing in their goals</h5>
+                  <a href="#" alt="Funding Flow">View more</a>
+                </figcaption>     
+              </figure>
             </div>
-            <div class="project proj6">
-              <a href="ira-transfers.html" alt="IRA Transfers">
-                <div class="project--hover">
-                  <h6>Building trust with Ellevest's story</h6>
-                </div>
-                <img src="img/thumb_about-us.png" alt="About Us" height="100%" width="100%">
-              </a>
-            </div> 
+            <div class="project proj4 grid">
+              <figure class="effect-milo">
+                <img src="img/thumb_resource-center.png" alt="Resource Center">
+                <figcaption>
+                  <h2>Resource Center Strategy</h2>
+                  <h5>Providing practical financial education</h5>
+                  <a href="#" alt="Resource Center">View more</a>
+                </figcaption>     
+              </figure>              
+            </div>
+          </div>
+          <div class="large-4 medium-4 columns">
+            <div class="project proj5 grid">
+              <figure class="effect-milo">
+                <img src="img/thumb_NMG.png" alt="New Market Goods">
+                <figcaption>
+                  <h2>New Market Goods</h2>
+                  <h5>Creating an interactive e-commerce protype for a socially responsible clothing line</h5>
+                  <a href="#" alt="New Market Goods">View more</a>
+                </figcaption>     
+              </figure>              
+            </div>
+            <div class="project proj6 grid">
+              <figure class="effect-milo">
+                <img src="img/thumb_about-us.png" alt="About Us">
+                <figcaption>
+                  <h2>About Us</h2>
+                  <h5>Building brand trust by sharing Ellevest's story</h5>
+                  <a href="#" alt="About Us">View more</a>
+                </figcaption>     
+              </figure>
+            </div>
           </div>                
         </div>
       </div>
@@ -97,7 +109,7 @@
     <section class="row about">
       <div class="column">
         <h3>Design as a Vehicle for Social Change</h3>
-        <h5>I believe that having empathy, not only for your users, but also colleages creates better products. I look for diversity and inclusion at every intersection of life. I also like zombies and pie.</h5>
+        <h5>I believe that having empathy for users creates better products and human beings. I look for diversity and inclusion at every intersection of life. I also like zombies and pie.</h5>
         <a href="#" class="button" target="blank">Resume</a>
       </div>
     </section>
@@ -116,5 +128,11 @@
       ga('create', 'UA-50609578-1', 'mehgan.com');
       ga('send', 'pageview');
     </script>
+    <!-- <script>
+      // For Demo purposes only (show hover effect on mobile devices)
+      [].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
+        el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+      } );
+    </script> -->
   </body>
 </html>

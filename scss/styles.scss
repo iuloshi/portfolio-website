@@ -65,14 +65,14 @@ a {
 // --------
 
 .nav--home, .nav--project {
+	z-index: 10;
+
 	.contact, .home {
 		font-family: 'Roboto', sans-serif;
 		letter-spacing: 3px;
 		font-size: .75rem;
-		&:hover {
-//			border-bottom: 2px solid;
-		}
 	}
+
 	.social-media {
 		font-size: 1.2rem;
 
@@ -119,38 +119,92 @@ header {
 
 .portfolio {
 	.project {
-		position: relative;
-
 	 	&.proj1,
 	 	&.proj3,
 	 	&.proj5 {
 	 		margin-bottom: 2rem;
 	 	}
-		
-		.project--hover {
-			opacity: 0;
-			position: absolute;
-			top: 0;
-			z-index: 1;
-			height: 100%;
-			width: 100%;
-			background-color: rgba(40,40,40,.9);
-			-webkit-transition: opacity 0.3s;
-			-moz-transition: opacity 0.3s;
-			-o-transition: opacity 0.3s;
-			transition: opacity 0.3s;
+	}
 
-			h6 {
-				padding: 35% 2rem;
-				text-align: center;
-				color: $white;
-			}
-		}
-		&:hover {
-			.project--hover {
-				opacity: 1;
-			}
-		}				
+	//Project Hover
+	.grid {
+		position: relative;
+	}
+	.grid figure {
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	.grid figure img {
+		position: relative;
+		display: block;
+	}
+	.grid figure figcaption {
+		padding: 2em;
+		color: $white;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	.grid figure figcaption::before,
+	.grid figure figcaption::after {
+		pointer-events: none;
+	}
+	.grid figure figcaption,
+	.grid figure figcaption > a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	// Anchor will cover the whole item by default
+	.grid figure figcaption > a {
+		z-index: 1;
+		text-indent: 200%;
+		white-space: nowrap;
+		font-size: 0;
+		opacity: 0;
+	}
+	figure.effect-milo {
+		background: $primary-color;
+	}
+	figure.effect-milo img {
+		opacity: 1;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		-webkit-transform: translate3d(0,0,0) scale(1);
+		transform: translate3d(0,0,0) scale(1);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	figure.effect-milo:hover img {
+		opacity: 0.1;
+		-webkit-transform: translate3d(0,0,0) scale(1.12);
+		transform: translate3d(0,0,0) scale(1.12);
+	}
+	figure.effect-milo h2,
+	figure.effect-milo h5 {
+		width: 70%;
+		text-align: right;
+		opacity: 0;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		-webkit-transform: translate3d(-40px,0,0);
+		transform: translate3d(-40px,0,0);	
+	}
+	figure.effect-milo h2 {
+		font-size: 2rem;
+		line-height: 2.35rem;
+		padding-top: 1rem;
+	}
+	figure.effect-milo h5 {
+		font-size: .85rem;
+	}
+	figure.effect-milo:hover h2,
+	figure.effect-milo:hover h5 {
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
 	}
 }
 
