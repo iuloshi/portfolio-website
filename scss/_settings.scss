@@ -51,7 +51,7 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #832156,
-  secondary: #bdebcb,
+  secondary: #BBD61D,
   success: #52b5af,
   warning: #e92660,
   alert: #cc4b37,
@@ -60,7 +60,7 @@ $light-gray: #F2F2F6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
-$white: #fefefe;
+$white: #fff;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Lora', serif;
@@ -113,12 +113,12 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 30), 
-    'h2': ('font-size': 28),
-    'h3': ('font-size': 18),
-    'h4': ('font-size': 15),
-    'h5': ('font-size': 12),
-    'h6': ('font-size': 10),
+    'h1': ('font-size': 43), 
+    'h2': ('font-size': 36),
+    'h3': ('font-size': 30),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 16),
+    'h6': ('font-size': 13),
   ),
   medium: (
     'h1': ('font-size': 48),

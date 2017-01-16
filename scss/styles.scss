@@ -141,7 +141,7 @@ header {
 	}
 	.grid figure figcaption {
 		padding: 2em;
-		color: $white;
+		color: $black;
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
 	}
@@ -166,7 +166,7 @@ header {
 		opacity: 0;
 	}
 	figure.effect-milo {
-		background: $primary-color;
+		background: $white;
 	}
 	figure.effect-milo img {
 		opacity: 1;
@@ -209,7 +209,7 @@ header {
 }
 
 .about {
-	margin: 10rem 13rem;
+	margin: 10rem auto;
 	text-align: center;	
 }
 
@@ -249,3 +249,68 @@ header {
 		margin-top: 1.5rem;
 	}
 }
+
+
+
+// Media Queries
+// -------------
+
+//Small & Medium only
+@media screen and (max-width: 40em) {
+
+	//Homepage
+	.grid figure img {
+		margin: auto;
+		width: 100%;
+	}
+	.portfolio {
+		.project {
+		 	&.proj1,
+		 	&.proj2,
+		 	&.proj3,
+		 	&.proj4,		 	
+		 	&.proj5,
+		 	&.proj6 {
+		 		margin-bottom: 1rem;
+		 	}
+		}
+	}
+
+	//Project Page
+	.copy__title {
+		h2,h5 {
+			text-align: left;
+		} 
+	}
+	.project__copy .copy__title .button--small {
+		float: left;
+	}
+
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.title-bar {
+		padding: .4rem .5rem;
+
+		.social-media {
+			font-size: 1rem;
+		}
+		.contact {
+		  letter-spacing: 2px;
+    	font-size: .7rem;
+		}
+	}
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
