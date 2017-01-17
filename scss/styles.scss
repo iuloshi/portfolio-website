@@ -82,11 +82,16 @@ a {
 	}
 
 	.social-media {
-		font-size: 1.2rem;
+		font-size: 1rem;
 
 		a {
-			padding: 0 .3rem;		
+			padding: 0 .4rem;		
 		}
+	}
+}
+.nav--project {
+	.social-media {
+		padding-top: .27rem;
 	}
 }
 
@@ -304,7 +309,7 @@ header {
 		padding: .4rem .5rem;
 
 		.social-media {
-			font-size: 1rem;
+			font-size: .9rem;
 		}
 		.contact {
 		  letter-spacing: 2px;
