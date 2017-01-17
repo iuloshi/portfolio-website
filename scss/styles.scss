@@ -67,10 +67,18 @@ a {
 .nav--home, .nav--project {
 	z-index: 10;
 
-	.contact, .home {
+	.contact {
 		font-family: 'Roboto', sans-serif;
 		letter-spacing: 3px;
 		font-size: .75rem;
+	}
+	.home {
+		font-family: 'Abril Fatface', cursive;
+		font-size: 1.15rem;
+	}
+	.pipe--nav {
+		color: $medium-gray;
+		padding: 0 1rem 0 .5rem;
 	}
 
 	.social-media {
@@ -140,7 +148,7 @@ header {
 		display: block;
 	}
 	.grid figure figcaption {
-		padding: 2em;
+		padding: 1.5em;
 		color: $black;
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
@@ -184,7 +192,7 @@ header {
 	}
 	figure.effect-milo h2,
 	figure.effect-milo h5 {
-		width: 70%;
+		width: 100%;
 		text-align: right;
 		opacity: 0;
 		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -195,7 +203,6 @@ header {
 	figure.effect-milo h2 {
 		font-size: 2rem;
 		line-height: 2.35rem;
-		padding-top: 1rem;
 	}
 	figure.effect-milo h5 {
 		font-size: .85rem;
@@ -233,10 +240,13 @@ header {
 		}
 	}
 	.copy__body {
-		margin-top: 4.05rem;
+		margin-top: 5rem;
 
 		h6 {
 			padding-top: 1.4em;
+		}
+		a {
+			border-bottom: 1px solid;
 		}
 	}
 }
@@ -288,7 +298,7 @@ header {
 
 }
 
-/* Small only */
+//Small only
 @media screen and (max-width: 39.9375em) {
 	.title-bar {
 		padding: .4rem .5rem;
