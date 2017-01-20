@@ -260,8 +260,16 @@ header {
 
 	.image__container {
 		background-color: $light-gray;
-		height: 400px;
 		margin-top: 1.5rem;
+
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+
+	.copy__caption-label {
+		margin: .5rem 0 3rem 0;
 	}
 }
 
