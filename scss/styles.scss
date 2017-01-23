@@ -319,13 +319,25 @@ header {
 		.social-media {
 			font-size: 1.2rem;
 			a {
-				padding: 0 .3rem;
+				padding: 0 .2rem;
 			}
 		}
 		.contact {
 		  letter-spacing: 0;
     	font-size: .8rem;
 		}
+	}
+
+	.nav--project {
+		.pipe--nav {
+			padding: 0 .25rem;
+		}
+		.social-media {
+			padding-top: 0;
+		}
+	}
+	.copy__body p {
+		font-size: .9rem;
 	}
 }
 
