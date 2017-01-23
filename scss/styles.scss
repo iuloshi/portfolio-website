@@ -317,11 +317,14 @@ header {
 		padding: .4rem .5rem;
 
 		.social-media {
-			font-size: .9rem;
+			font-size: 1rem;
+			a {
+				padding: 0 .3rem;
+			}
 		}
 		.contact {
-		  letter-spacing: 2px;
-    	font-size: .7rem;
+		  letter-spacing: 1px;
+    	font-size: .8rem;
 		}
 	}
 }
