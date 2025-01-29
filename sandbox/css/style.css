@@ -163,6 +163,15 @@ p {
 	font-size: 1rem;
 }
 
+::selection { /* change highlight background color*/
+	color: black;
+	background: #7BFFE7;
+  }
+::-moz-selection { /* Firefox */
+	color: black;
+	background: #7BFFE7;
+  }
+
 /* Text links*/
 a {
 	text-decoration: none;
@@ -187,12 +196,16 @@ nav {
 
 /* ============ HOMEPAGE ============ */
 body.homepage {
-    background: linear-gradient(160deg,#ccfbff,#fbcae4,#dafea4);
-    background-size: 180% 180%;
-    animation: gradient-animation 10s ease infinite;
-    height:120vh;
+    background: linear-gradient(240deg,#ccfbff,#fbcae4,#dafea4);
+	/*background: linear-gradient(217deg, rgba(242,47,176,.5), rgba(156,126,255,0) 70%),
+				linear-gradient(127deg, rgba(123,255,231,.8), rgba(255,241,111,0) 70%),
+				linear-gradient(13deg, rgba(255,241,111,.8), rgba(255,241,111,0) 70%),
+				linear-gradient(336deg, rgba(213,123,255,.8), rgba(255,197,111,0) 70%);	*/
+    background-size: 150% 150%;
+    animation: gradient 15s ease infinite;
+    height: 120vh;
 }
-@keyframes gradient-animation {
+@keyframes gradient {
     0% {
       background-position: 0% 50%;
     }
@@ -208,7 +221,7 @@ body.homepage {
 
 main.homepage {
 	margin: 5rem auto 0;
-	max-width: 1400px;
+	max-width: 1100px;
 	display: grid;
 }
 main.homepage div {
@@ -247,7 +260,16 @@ a.proj-link:hover .proj-box {
 /*fix spacing between project rows*/
 .proj-3,
 .proj-4 {
-	padding-top: 1rem;
+	padding-top: .75rem;
+}
+.footnote {
+	padding: 1rem 0;
 }
 
 /* ====== PROJECT PAGES ======*/
+
+main.homepage {
+	margin: 5rem auto 0;
+	max-width: 1100px;
+	display: grid;
+}
