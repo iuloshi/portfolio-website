@@ -136,8 +136,6 @@ summary {
 
 /* ============ GLOBAL OVERRIDES ============ */
 
-/* Grid*/
-
 /* Typography*/
 h1, h2, h3, h4, h5, a {
 	font-family: "Roboto Mono", serif;
@@ -161,6 +159,7 @@ p {
 	font-variation-settings:
 		"wdth" 100;
 	font-size: 1rem;
+	line-height: 1.25rem;
 }
 
 ::selection { /* change highlight background color*/
@@ -179,6 +178,23 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+}
+
+/* Buttons*/
+a.button {
+	display: inline-block; /*To stay within container flow*/
+	padding: .85rem 1.25rem;
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
+	background: black;
+	text-transform: lowercase;
+	letter-spacing: 2px;
+}
+a.button:hover {
+	color: black;
+	background-color: white;
+	box-shadow: inset 0 0 0 2px black; /*Inset border so doesn't change height of button on hover*/
 }
 
 /* ============ NAVIGATION ============ */
@@ -281,7 +297,52 @@ section.proj__name,
 section.proj__details {
 	display: grid;
 	grid-template-columns: 3fr 5fr;
-	gap: 1.5rem;
+	gap: 2rem;
+}
+section.proj__name h1 {
+	font-size: 3rem;
+	margin: 0 0 .5rem;
+	letter-spacing: -1px;
+}
+section.proj__name h2 {
+	font-size: 1.5rem;
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+	margin: 0 0 1.5rem;
+}
+section.proj__details {
+	margin-bottom: 2rem;
+}
+p.proj__categories {
+	font-style: italic;
+	color: #565656;
+	margin-bottom: 1.5rem;
+}
+div.proj__cta {
+	border-top: 2px solid black;
+	padding-top: 1rem;
+}
+div.proj__description {
+	padding-top: 1.125rem;
+}
+div.proj__description p {
+	padding-bottom: 1rem;
+}
+div.proj__description a {
+	text-decoration: underline;
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+}
+div.proj__description a:hover {
+	text-decoration: none;
 }
 section.proj__images div {
 	max-width: 1100px;
