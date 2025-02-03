@@ -135,6 +135,9 @@ summary {
 }
 
 /* ============ GLOBAL OVERRIDES ============ */
+body {
+	margin: 0 2rem;
+}
 
 /* Typography*/
 h1, h2, h3, h4, h5, a {
@@ -233,8 +236,6 @@ body.homepage {
     }
 }
 
-/*INDEX.HTML*/
-
 main.homepage {
 	margin: 5rem auto 0;
 	max-width: 1100px;
@@ -247,12 +248,11 @@ main.homepage div {
 a.proj__link h1, p {
 	margin: 0;
 }
-/*bug: Not sure why text for projects 2-5 is displaying smaller than 1st project text. Added inline styles forcing font-size.*/
 a.proj__link h1 {
-	font-size: 2rem;
+	font-size: 2.25rem;
 }
 a.proj__link p {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	padding-top: .5rem;
 }
 a.proj__link {
@@ -273,10 +273,8 @@ a.proj__link:hover .proj__box {
 	color: black;
 	background-color: white;
 }
-/*fix spacing between project rows*/
-.proj-3,
-.proj-4 {
-	padding-top: .75rem;
+.proj-3 { /*fix spacing between project rows*/
+	padding-top: .6rem;
 }
 .footnote {
 	padding: 1rem 0;
@@ -356,3 +354,63 @@ section.proj__images img {
 section.proj__images p {
 	padding-top: .75rem;
 }
+footer {
+	margin-top: 1rem;
+	padding: 2rem 0;
+	border-top: 2px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/* ====== MEDIA QUERIES ======*/
+
+/* Small and medium only (<768px) */
+@media screen and (max-width: 48em) {
+	/* Homepage */
+	a.proj__link h1 {
+		font-size: 2.5rem;
+	}
+	a.proj__link p {
+		font-size: 2rem;
+	}
+	.proj-3 { /*fix spacing between project rows*/
+		padding-top: .25rem;
+	}
+
+	/* Project page */
+	section.proj__name,
+	section.proj__details {
+		grid-template-columns: 1fr;
+	}
+	section.proj__name h2 {
+		margin-bottom: 0;
+	}
+}
+
+/* Small only (<640px) */
+@media screen and (max-width: 39.9375em) {
+	body {
+		margin: 0 1rem;
+	}
+	/* Homepage */
+	a.proj__link h1 {
+		font-size: 3rem;
+	}
+	a.proj__link p {
+		font-size: 2.5rem;
+	}	
+}
+
+/* Medium and up (640px+) */
+@media screen and (min-width: 40em) {
+}
+
+/* Medium only (640px - 1024px) */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up (1024px+) */
+@media screen and (min-width: 64em) {}
+
+/* Large only (1024px - 1200px) */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
