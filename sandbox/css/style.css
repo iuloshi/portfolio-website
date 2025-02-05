@@ -380,22 +380,21 @@ footer {
 	.nav__right a {
 		padding-left: 0;
 	}
-	
-}
 
-/* Small and medium only (<768px) */
-@media screen and (max-width: 48em) {
 	/* Homepage */
 	a.proj__link h1 {
 		font-size: 2.5rem;
 	}
 	a.proj__link p {
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 	.proj-3 { /*fix spacing between project rows*/
-		padding-top: .25rem;
-	}
+		padding-top: .5rem;
+	}	
+}
 
+/* Small and medium only (<768px) */
+@media screen and (max-width: 48em) {
 	/* Project page */
 	section.proj__name,
 	section.proj__details {
