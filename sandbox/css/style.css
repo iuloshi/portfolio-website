@@ -375,7 +375,7 @@ footer {
 	.nav__right {
 		display: flex;
 		justify-content: space-between;
-		padding-top: .5rem;
+		padding-top: .75rem;
 	}
 	.nav__right a {
 		padding-left: 0;
@@ -416,22 +416,20 @@ footer {
 	}
 	/* Homepage */
 	a.proj__link h1 {
-		font-size: 2.25rem;
+		font-size: 4rem;
 	}
 	a.proj__link p {
-		font-size: 3rem;
-		padding-top: 1rem;
+		display: none;
 	}	
 	/* Nav */
 	.nav__left,
 	p.footnote {
-		font-size: .7rem;
+		font-size: .9rem;
 	}
 }
 
 /* Medium and up (640px+) */
-@media screen and (min-width: 40em) {
-}
+@media screen and (min-width: 40em) {}
 
 /* Medium only (640px - 1024px) */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {}
