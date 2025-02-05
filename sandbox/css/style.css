@@ -366,6 +366,23 @@ footer {
 
 /* ====== MEDIA QUERIES ======*/
 
+/* Small and medium only (<900px) */
+@media screen and (max-width: 57.25em) {
+	/* Nav */
+	nav {
+		display: block;
+	}
+	.nav__right {
+		display: flex;
+		justify-content: space-between;
+		padding-top: .5rem;
+	}
+	.nav__right a {
+		padding-left: 0;
+	}
+	
+}
+
 /* Small and medium only (<768px) */
 @media screen and (max-width: 48em) {
 	/* Homepage */
@@ -404,6 +421,11 @@ footer {
 	a.proj__link p {
 		font-size: 2.5rem;
 	}	
+	/* Nav */
+	.nav__left,
+	p.footnote {
+		font-size: .7rem;
+	}
 }
 
 /* Medium and up (640px+) */
