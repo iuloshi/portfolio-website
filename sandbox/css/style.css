@@ -418,7 +418,8 @@ footer {
 	a.proj__link h1 {
 		font-size: 4rem;
 	}
-	a.proj__link p {
+	a.proj__link p,
+	span.nav__mobile-hide {
 		display: none;
 	}	
 	/* Nav */
