@@ -412,14 +412,15 @@ footer {
 /* Small only (<640px) */
 @media screen and (max-width: 39.9375em) {
 	body {
-		margin: 0 1rem;
+		margin: 0 .5rem;
 	}
 	/* Homepage */
 	a.proj__link h1 {
-		font-size: 3rem;
+		font-size: 2.25rem;
 	}
 	a.proj__link p {
-		font-size: 2.5rem;
+		font-size: 3rem;
+		padding-top: 1rem;
 	}	
 	/* Nav */
 	.nav__left,
