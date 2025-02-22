@@ -434,6 +434,9 @@ footer {
 	span.nav__mobile-hide {
 		display: none;
 	}	
+	a.proj__link img { /*Fix asterisk displaying on iPhone/Safari*/
+		display: none;
+	}
 }
 
 /* Medium and up (640px+) */
